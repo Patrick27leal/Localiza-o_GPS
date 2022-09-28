@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Localiza</title>
+</head>
+
+<body>
+    <header>
+        <div class="Box-Form">
+            <input id="Campo_CEP" type="text" placeholder="CEP">
+            <button onclick="PesquisaCEP()">Buscar</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="menu-informativo">
+            <div class="box-components">
+                <p class="Representativo">Rua:</p>
+                <p id="Resposta_Rua"></p>
+            </div>
+            <div class="box-components">
+                <p class="Representativo">Bairro:</p>
+                <p id="Resposta_Bairro"></p>
+            </div>
+            <div class="box-components">
+                <p class="Representativo">Cidade:</p>
+                <p id="Resposta_Cidade"></p>
+            </div>
+            <div class="box-components">
+                <p class="Representativo">Estado:</p>
+                <p id="Resposta_Estado"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="http://maps.google.com/maps/api/js"></script>
+</body>
+
+</html>
